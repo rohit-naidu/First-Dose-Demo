@@ -1,0 +1,314 @@
+{
+  "version": "2026.05.24-demo-v1",
+  "entries": [
+    {
+      "id": "ev-pparg-rs1801282",
+      "rsid": "rs1801282",
+      "gene": "PPARG",
+      "impactTier": "High",
+      "interpretation": "Adipocyte insulin-sensitivity risk",
+      "mechanism": "PPAR-gamma controls adipocyte differentiation, lipid storage, and insulin-sensitizing transcription.",
+      "source": "Frontiers Endocrinology 2022 systematic review, DOI: 10.3389/fendo.2022.919087",
+      "contributesTo": ["titration_caution", "metabolic_response", "nausea_risk"],
+      "sideEffects": [
+        {
+          "event": "GI intolerance during escalation",
+          "likelihood": "Moderate",
+          "mechanism": "Metabolic context and adiposity signal increase sensitivity to concentration spikes",
+          "onsetWindow": "Week 1-4"
+        },
+        {
+          "event": "Dyslipidemia / weight plateau",
+          "likelihood": "Moderate",
+          "mechanism": "PPARG biology links to lipid handling and adipocyte insulin sensitivity",
+          "onsetWindow": "Week 4-12"
+        }
+      ],
+      "prescribingActions": [
+        {
+          "action": "Use tolerability-first titration; avoid rapid weekly peak",
+          "rationale": "PPARG + concordant BMI/liver markers support slower escalation",
+          "priority": "Required"
+        },
+        {
+          "action": "Track waist circumference, lipids, and ALT/AST before week-five escalation",
+          "rationale": "Metabolic-risk amplification from PPARG context",
+          "priority": "Recommended"
+        }
+      ],
+      "planTriggers": [
+        {
+          "triggerId": "split_cadence_metabolic",
+          "category": "cadence",
+          "detail": "Split dose Day 1 + Day 4 to reduce peak exposure",
+          "priority": "Required",
+          "weight": 8
+        }
+      ]
+    },
+    {
+      "id": "ev-glp1r-rs10305492",
+      "rsid": "rs10305492",
+      "gene": "GLP1R",
+      "impactTier": "High",
+      "interpretation": "Altered GLP-1 receptor signaling",
+      "mechanism": "Variant affects GLP-1 receptor trafficking/signaling, changing incretin-induced cellular response.",
+      "source": "PMID: 35723666 - Association of GLP1R Polymorphisms With the Incretin Response",
+      "contributesTo": ["nausea_risk", "gi_intolerance", "titration_caution"],
+      "sideEffects": [
+        {
+          "event": "Nausea / vomiting",
+          "likelihood": "High",
+          "mechanism": "Receptor-level variability may increase symptom sensitivity during peak exposure",
+          "onsetWindow": "Week 1-3"
+        },
+        {
+          "event": "Early satiety / reduced intake",
+          "likelihood": "Moderate",
+          "mechanism": "Altered GLP-1 signaling can change gastric tolerance",
+          "onsetWindow": "Week 1-4"
+        }
+      ],
+      "prescribingActions": [
+        {
+          "action": "Avoid manufacturer-default weekly peak in weeks 1-3",
+          "rationale": "GLP1R variant increases early intolerance risk at target receptor",
+          "priority": "Required"
+        },
+        {
+          "action": "Use split retatrutide cadence (Day 1 + Day 4)",
+          "rationale": "Smooth plasma exposure reduces concentration spikes",
+          "priority": "Required"
+        }
+      ],
+      "planTriggers": [
+        {
+          "triggerId": "low_starting_dose",
+          "category": "dose",
+          "detail": "Week 1: 0.5mg + 0.5mg with antiemetic prophylaxis",
+          "priority": "Required",
+          "weight": 10
+        },
+        {
+          "triggerId": "triple_agonist_preferred",
+          "category": "molecule",
+          "detail": "Retatrutide (GLP-1/GIP/glucagon triple agonist) preferred for receptor coverage",
+          "priority": "Required",
+          "weight": 9
+        }
+      ]
+    },
+    {
+      "id": "ev-gipr-rs10423928",
+      "rsid": "rs10423928",
+      "gene": "GIPR",
+      "impactTier": "Moderate",
+      "interpretation": "GIP axis metabolic-syndrome signal",
+      "mechanism": "GIPR modulates glucose-dependent insulinotropic signaling and adipose nutrient handling.",
+      "source": "Genes 2022;13:1534 - GIPR SNP variants and metabolic health",
+      "contributesTo": ["dual_agonist", "postprandial_symptoms"],
+      "sideEffects": [
+        {
+          "event": "Post-prandial GI discomfort",
+          "likelihood": "Moderate",
+          "mechanism": "GIP pathway variability may shift post-meal insulinotropic and GI response",
+          "onsetWindow": "Week 1-4"
+        }
+      ],
+      "prescribingActions": [
+        {
+          "action": "Prefer triple-agonist (retatrutide) over GLP-1-only protocol",
+          "rationale": "GIPR signal supports pathway coverage for visceral-fat and insulin context",
+          "priority": "Recommended"
+        }
+      ],
+      "planTriggers": [
+        {
+          "triggerId": "gip_pathway_coverage",
+          "category": "molecule",
+          "detail": "Retatrutide selected for GIP + GLP-1 + glucagon pathway coverage",
+          "priority": "Recommended",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "id": "ev-tcf7l2-rs7903146",
+      "rsid": "rs7903146",
+      "gene": "TCF7L2",
+      "impactTier": "High",
+      "interpretation": "Reduced incretin effect",
+      "mechanism": "TCF7L2 risk alleles impair beta-cell sensitivity to GLP-1/GIP.",
+      "source": "PMID: 19934000 - TCF7L2 rs7903146 modulates incretin action",
+      "contributesTo": ["nausea_risk", "glycemic_variability", "titration_caution"],
+      "sideEffects": [
+        {
+          "event": "Nausea / hyperemesis vulnerability",
+          "likelihood": "High",
+          "mechanism": "Reduced incretin effect plus peak exposure increases early intolerance risk",
+          "onsetWindow": "Week 1-3"
+        },
+        {
+          "event": "Fatigue / inconsistent glycemic response",
+          "likelihood": "Moderate",
+          "mechanism": "Beta-cell incretin sensitivity is blunted",
+          "onsetWindow": "Week 1-6"
+        }
+      ],
+      "prescribingActions": [
+        {
+          "action": "Use adaptive split cadence; physician checkpoint before week-five escalation",
+          "rationale": "TCF7L2 makes dose response less predictable",
+          "priority": "Required"
+        },
+        {
+          "action": "Trend fasting and post-prandial glucose before each escalation",
+          "rationale": "Beta-cell incretin sensitivity is reduced in carriers",
+          "priority": "Required"
+        }
+      ],
+      "planTriggers": [
+        {
+          "triggerId": "physician_checkpoint_w5",
+          "category": "escalation",
+          "detail": "Physician checkpoint before week 5; trend glucose and GI tolerance weekly",
+          "priority": "Required",
+          "weight": 9
+        }
+      ]
+    },
+    {
+      "id": "ev-fto-rs9939609",
+      "rsid": "rs9939609",
+      "gene": "FTO",
+      "impactTier": "Moderate",
+      "interpretation": "Satiety and obesity-risk amplifier",
+      "mechanism": "FTO-region variation is associated with appetite regulation and energy-intake behavior.",
+      "source": "PMID: 17434869 - FTO variant associated with body mass and obesity risk",
+      "contributesTo": ["appetite_adherence"],
+      "sideEffects": [
+        {
+          "event": "Appetite rebound / craving",
+          "likelihood": "Moderate",
+          "mechanism": "FTO-associated appetite regulation may blunt perceived satiety benefit",
+          "onsetWindow": "Week 2-8"
+        }
+      ],
+      "prescribingActions": [
+        {
+          "action": "Add protein preload and appetite-score instrumentation",
+          "rationale": "FTO homozygous state supports behavioral monitoring",
+          "priority": "Recommended"
+        }
+      ],
+      "planTriggers": [
+        {
+          "triggerId": "appetite_monitoring",
+          "category": "monitoring",
+          "detail": "Track hunger, craving, and protein intake weekly",
+          "priority": "Recommended",
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "id": "ev-mc4r-rs17782313",
+      "rsid": "rs17782313",
+      "gene": "MC4R",
+      "impactTier": "Moderate",
+      "interpretation": "Melanocortin appetite pathway signal",
+      "mechanism": "MC4R pathway regulates hypothalamic satiety signaling and energy homeostasis.",
+      "source": "PMID: 18454148 - Common variants near MC4R associated with fat mass and obesity",
+      "contributesTo": ["appetite_adherence"],
+      "sideEffects": [
+        {
+          "event": "Hunger rebound between doses",
+          "likelihood": "Moderate",
+          "mechanism": "Melanocortin satiety pathway may counteract early pharmacologic satiety",
+          "onsetWindow": "Week 1-4"
+        }
+      ],
+      "prescribingActions": [
+        {
+          "action": "Week-by-week satiety checkpoints before escalation",
+          "rationale": "MC4R supports higher-touch appetite monitoring",
+          "priority": "Recommended"
+        }
+      ],
+      "planTriggers": []
+    },
+    {
+      "id": "ev-kcnj11-rs5219",
+      "rsid": "rs5219",
+      "gene": "KCNJ11",
+      "impactTier": "Supportive",
+      "interpretation": "Beta-cell excitability modifier",
+      "mechanism": "KCNJ11 encodes Kir6.2, a pancreatic beta-cell potassium-channel subunit.",
+      "source": "PMID: 12475775 - Pancreatic ATP-sensitive potassium channels and type 2 diabetes",
+      "contributesTo": ["glycemic_variability"],
+      "sideEffects": [
+        {
+          "event": "Glycemic variability",
+          "likelihood": "Moderate",
+          "mechanism": "Beta-cell channel biology may blunt predictable insulin secretion response",
+          "onsetWindow": "Week 1-8"
+        }
+      ],
+      "prescribingActions": [
+        {
+          "action": "Trend glucose response before dose acceleration",
+          "rationale": "KCNJ11 adds beta-cell response uncertainty",
+          "priority": "Monitor"
+        }
+      ],
+      "planTriggers": [
+        {
+          "triggerId": "glucose_trending",
+          "category": "monitoring",
+          "detail": "Trend fasting and post-prandial glucose before each escalation",
+          "priority": "Monitor",
+          "weight": 4
+        }
+      ]
+    },
+    {
+      "id": "ev-pnpla3-rs738409",
+      "rsid": "rs738409",
+      "gene": "PNPLA3",
+      "impactTier": "Supportive",
+      "interpretation": "Hepatic fat and ALT-risk context",
+      "mechanism": "PNPLA3 variation is associated with hepatic triglyceride remodeling and fatty-liver susceptibility.",
+      "source": "PMID: 18820647 - PNPLA3 variant associated with hepatic fat content",
+      "contributesTo": ["hepatic_safety"],
+      "sideEffects": [
+        {
+          "event": "ALT/AST elevation",
+          "likelihood": "Moderate",
+          "mechanism": "Hepatic fat susceptibility plus borderline baseline enzymes",
+          "onsetWindow": "Week 2-12"
+        }
+      ],
+      "prescribingActions": [
+        {
+          "action": "Repeat ALT/AST before week-five escalation",
+          "rationale": "PNPLA3 + borderline enzymes raise hepatic surveillance priority",
+          "priority": "Required"
+        },
+        {
+          "action": "Hold escalation if ALT/AST rise >2x baseline",
+          "rationale": "Hepatic safety context from genotype and biomarkers",
+          "priority": "Required"
+        }
+      ],
+      "planTriggers": [
+        {
+          "triggerId": "hepatic_hold",
+          "category": "hold",
+          "detail": "Hold if ALT/AST >2x baseline, severe GI intolerance, or eGFR decline",
+          "priority": "Required",
+          "weight": 8
+        }
+      ]
+    }
+  ]
+}

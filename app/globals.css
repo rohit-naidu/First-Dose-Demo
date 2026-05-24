@@ -2,7 +2,7 @@
 @config "../tailwind.config.ts";
 
 :root {
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 * {
@@ -11,11 +11,19 @@
 
 body {
   margin: 0;
-  background: #020617;
-  color: #f8fafc;
+  background: #c0c0c0;
+  color: #1a1a1a;
+  font-family: Tahoma, "Segoe UI", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.35;
 }
 
 button,
 a {
   -webkit-tap-highlight-color: transparent;
+}
+
+/* Legacy EMR table density */
+table {
+  border-collapse: collapse;
 }

@@ -1,0 +1,12 @@
+# This file contains raw SNP data from 23andMe-style export for testing.
+# Only the 8 panel rsids below are scored by the science engine.
+#
+# rsid	chromosome	position	genotype
+rs1801282	3	12393125	GG
+rs10305492	6	39017488	AT
+rs10423928	19	45867853	AG
+rs7903146	10	114758349	CT
+rs9939609	16	53820527	AA
+rs17782313	18	57851097	CT
+rs5219	11	17409525	TC
+rs738409	22	44324727	CG

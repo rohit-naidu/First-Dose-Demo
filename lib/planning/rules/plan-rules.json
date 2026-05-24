@@ -1,0 +1,46 @@
+{
+  "defaultDrug": "retatrutide",
+  "moleculeTemplates": {
+    "retatrutide": {
+      "label": "Compounded Retatrutide (GLP-1/GIP/glucagon triple agonist)",
+      "fallbackCadence": "4-day split cadence (Day 1 + Day 4)",
+      "fallbackStartingDose": "0.5mg + 0.5mg Week 1",
+      "fallbackEscalation": "Adaptive titration with physician sign-off before week 5",
+      "fallbackHold": "ALT/AST >2x baseline, severe nausea/vomiting, eGFR decline"
+    }
+  },
+  "categoryLabels": {
+    "molecule": "Molecule",
+    "cadence": "Cadence",
+    "dose": "Starting dose",
+    "escalation": "Escalation rule",
+    "monitoring": "Monitoring",
+    "hold": "Hold criteria"
+  },
+  "titrationWeeks": [
+    {
+      "week": "Week 1",
+      "cadence": "Day 1 + Day 4",
+      "dose": "0.5mg + 0.5mg",
+      "support": "Ondansetron 4mg PRN, ginger extract nightly, hydration target 2.4L/day."
+    },
+    {
+      "week": "Week 2",
+      "cadence": "Day 8 + Day 11",
+      "dose": "0.6mg + 0.6mg",
+      "support": "Continue anti-nausea protocol; add protein preload before dose window."
+    },
+    {
+      "week": "Week 3",
+      "cadence": "Day 15 + Day 18",
+      "dose": "0.75mg + 0.75mg",
+      "support": "Review satiety score and bowel motility before incremental escalation."
+    },
+    {
+      "week": "Week 4",
+      "cadence": "Day 22 + Day 25",
+      "dose": "0.9mg + 0.9mg",
+      "support": "Maintain split cadence; physician check-in before week-five titration."
+    }
+  ]
+}
